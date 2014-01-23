@@ -33,6 +33,7 @@ object Utils extends Build {
   ).settings(
     name := "utils",
     libraryDependencies ++= Seq(
+      "commons-io" % "commons-io" % "2.4",
       "org.apache.httpcomponents" % "httpclient" % "4.3.2"
     )
   )
