@@ -4,7 +4,6 @@ import java.io.{File=>JavaFile}
 import org.apache.commons.io.{FilenameUtils,FileUtils}
 
 object File {
-
   /**
    * Read string from a file.
    * 
@@ -31,9 +30,8 @@ object File {
    *
    * @param path String A file path, such as "./foo/bar.txt"
    */
-  private def buildJavaFile(path: String): JavaFile = {
+  def buildJavaFile(path: String): JavaFile = {
     val normalizedPath = FilenameUtils.normalize(path)
     new JavaFile(normalizedPath)
   }
-
 }
